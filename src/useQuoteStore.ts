@@ -25,7 +25,7 @@ export default function useQuoteStore() {
       return quoteState.get();
     },
     randomize: () => {
-      globalQuoteState.set(() => getRandomQuote());
+      quoteState.set(() => getRandomQuote());
     },
   };
   return quoteStore;
